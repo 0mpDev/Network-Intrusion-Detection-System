@@ -160,7 +160,7 @@ with st.sidebar:
     st.subheader("⚙️ API Configuration")
     backend_url = st.text_input(
         "FastAPI Backend URL",
-        value=os.getenv("BACKEND_URL", "http://localhost:8000"),
+        value=os.getenv("BACKEND_URL", "https://network-intrusion-detection-system-9hdc.onrender.com"),
         help="Endpoint where the FastAPI inference service is running.",
     )
 
