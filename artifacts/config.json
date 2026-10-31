@@ -1,0 +1,16 @@
+{
+  "input_dim": 122,
+  "latent_dim": 16,
+  "default_threshold": "p95",
+  "models": {
+    "ae": "ae.pt",
+    "vae": "vae.pt",
+    "ganomaly": "ganomaly_generator.pt"
+  },
+  "score_functions": {
+    "ae": "score_ae",
+    "vae": "score_vae",
+    "ganomaly": "score_ganomaly"
+  },
+  "note": "Load state_dict into classes from models.py. Score > threshold => attack."
+}
